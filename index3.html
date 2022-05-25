@@ -4,80 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 2</title>
+    <title>Exercise 3</title>
     <style>
-        /* .nav-container {
-            display: flex;
-            flex-direction: column;
-        } */
         body {
             display: flex;
         }
-        nav {
-            background-color: rgb(146, 38, 108);
+        .nav {
+            background-color: rgb(129, 41, 110);
             color: white;
             min-height: 100vh;
-            flex-grow:  1
+            min-width: 100px;
+            
             
             
         }
         .header {
             background-color: rgb(21, 19, 19);
             color: white;
+            width: 100vw;
             flex-grow: 1;
+            
+            
         }
         .footer {
             background-color: rgb(21, 19, 19);
             color: white;
             flex-grow: 1;
+           
         }
         .article {
             background-color: white;
             color: black;
-            flex-grow: 3;
+            flex-grow: 2;
+           
         }
         .aside {
             background-color: rgb(66, 30, 112);
             color: white;
-            flex-grow: 1;
-        }
-        .main {
-            display: flex;
             flex-grow: 5;
+           
         }
-        .divtwo {
+        .div4elements {
             display: flex;
             flex-direction: column;
-            flex-grow: 4;
+            flex-grow: 2;
         }
-        h3 {
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-left: 10px; 
+        .div3elements {
+            display: flex;
+            flex-grow: 3;
         }
+        .div2elements {
+            display: flex;
+            flex-direction: column;
+            
+            width: 80vw;
+        }
+
     </style>
 </head>
 <body>
-
   <nav class="nav">
         <h3>Nav</h3>
   </nav>
   
-  <div class="divtwo"> 
-        <header class="header">
-          <h3>Header</h3>
-        </header>
-        <div class="main">
+  <div class="div4elements">
+    <header class="header">
+        <h3>Header</h3>
+    </header>
+    <div class="div3elements">
+        <div class="div2elements">
             <article class="article">
-            <h3>Article</h3>
+                <h3>Article</h3>
             </article>
-            <aside class="aside">
-            <h3>Aside</h3>
-            </aside>
+            <footer class="footer">
+                <h3>Footer</h3>
+            </footer>
         </div>
-        <footer class="footer">
-          <h3>Footer</h3>
-        </footer>
+        <aside class="aside">
+            <h3>Aside</h3>
+        </aside>
+    </div>
+    
+    
   </div>
 </body>
 </html>
