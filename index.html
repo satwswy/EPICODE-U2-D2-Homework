@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        body{
+            display: flex ;
+            flex-direction: column;
+            max-width: 100%;
+            justify-content:space-around;
+            
+            
+            
+        }
+        .header {
+            background-color: rgb(33, 27, 39);
+            height: 15vh;
+            color: white;
+        }
+        .main {
+            background-color: blue;
+            height: 60vh;
+            display: flex;
+        }
+        .footer {
+            background-color: rgb(33, 27, 39);
+            height: 15vh;
+            color: white;
+        }
+        .article {
+            background-color: white;
+            color: black;
+            flex-grow: 3;
+        }
+        .aside {
+            color: white;
+            background-color: rgb(46, 20, 101);
+            flex-grow: 1;
+        }
+        .nav {
+            color : white;
+            background-color: rgb(151, 37, 91);
+            flex-grow: 1;
+        }
+        h3 {
+            margin-left: 10px;
+            font-size: 1.37em;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3>Header</h3>
+    </header>
+    <main class="main">
+        <article class="article">
+            <h3>Article</h3>
+        </article>
+        <aside class="aside">
+            <h3>Aside</h3>
+        </aside>
+        <nav class="nav">
+            <h3>Nav</h3>
+        </nav>
+    </main>
+    <footer class="footer">
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>
